@@ -538,6 +538,8 @@ padding-bottom: 15vh;
   margin-bottom: 2px;
   overflow: hidden;
   position: relative;
+  border: solid 4px #fefefe;
+  box-shadow: 3px 2px 4px 6px rgb(17, 19, 19);
 }
 .project-item img {
   width: 100%;
@@ -546,7 +548,7 @@ padding-bottom: 15vh;
 
 .project-title{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 18px;
     color: #000;
     letter-spacing: 2.5px;
