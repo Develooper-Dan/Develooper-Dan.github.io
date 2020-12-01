@@ -2,7 +2,7 @@ const projects =
 	[
     {
       id: '1',
-      project_name: 'Fortbildungskurs-Manager',
+      project_name: 'School Course Manager',
       description: `Diese MPA verbindet eine REST API mit einem React-Frontend um eine Art Kurs-Manager bspw. für ein
 			Fortbildungsinstitut darzustellen. Ein nicht-registrierter Nutzer kann sich die einzelnen Kurse im Detail anschauen, jedoch
 			nicht bearbeiten oder löschen. Er kann sich registrieren und anschließend einen neuen Kurs anlegen, der ihm zugeordnet wird.
@@ -22,7 +22,7 @@ const projects =
     },
     {
       id: '2',
-      project_name: 'Büchereiinventar-Manager',
+      project_name: 'Library Manager',
       description: `Dieses Programm stellt einen Manager für ein einfaches Büchereiinventar auf Basis einer SQLite-Datenbank dar.
 			Der Nutzer bekommt einen Ausschnitt der Gesamtliste aller vorhandenen Bücher angezeigt und kann zwischen den einzelnen Ausschnitten
 			per Link hin und her navigieren. Er kann entscheiden, wie viele Einträge ihm pro Seite angezeigt werden. Außerdem besteht die Möglichkeit,
@@ -42,7 +42,7 @@ const projects =
     },
     {
       id: '3',
-      project_name: 'Interaktives Formular',
+      project_name: 'Interactive form',
       description: `Ein Anmeldeformular für eine fiktive JavaScript Konferenz. Es evaluiert die Nutzereingaben sowohl dynamisch
 			als auch beim Versuch, das Formular abzuschicken. Sollten eine oder mehrere Eingaben ungültig sein,
 			wird ein übermitteln der Daten verhindert und der Nutzer wird an der entsprechenden Stelle
@@ -76,7 +76,7 @@ const projects =
     },
     {
       id: '5',
-      project_name: 'Startup Angestelltenverzeichnis',
+      project_name: 'Public API request',
       description: `Diese SPA benutzt asynchrones JavaScript um zufällige (fiktive) Personendaten
 			von der randomuser.me API anzufragen und diese dann in einer Art Angestelltenregister visitenkartenartig darzustellen.
 			Eine Suchleiste fügt die Möglichkeit hinzu, nach einer oder mehreren Personen über den Vor-/ Nachnamen zu filtern.
@@ -95,22 +95,21 @@ const projects =
     },
 		{
 		id: '6',
-		project_name: 'Meine kleine Gallery App',
+		project_name: 'Random Quote Generator',
 		description: `Diese App lässt den Nutzer auf die Flickr API zugreifen um eine Auswahl von 24 Fotos
 		auf einer einfachen MPA darzustellen. Jeder Klick auf einen der vorgegebenen "Hot-Topic"-Buttons oder eine
 		gestartete Suchanfrage löst eine erneute Anfrage an die API aus. Die URL ändert sich entsprechend der getätigten Anfrage, sodass
 		der Nutzer über die Browsernavigation zwischen seinen Suchen hin- und herswitchen kann. Für die Nutzung dieser App wird ein eigener
 		Key für die Flickr API benötigt, daher ist eine Live demo leider nicht verfügbar.`,
 		technologies: [
-			'React mit React Router',
+			'React',
 			'AJAX',
-			'JSON',
 			'CSS'
 		],
-		github_repo: 'https://github.com/Develooper-Dan/react-gallery-app' ,
+		github_repo: 'https://develooper-dan.github.io/random-quote-generator/' ,
 		image_urls: {
-			main: './img/Gallery App main.jpg',
-			large:'./img/Gallery App 1.jpg'
+			main: './img/Random Quotes main.jpg',
+			large:'./img/Random Quotes 1.jpg'
 		}
 	}
   ]
