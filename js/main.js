@@ -96,11 +96,8 @@ const projects =
 		{
 		id: '6',
 		project_name: 'Random Quote Generator',
-		description: `Diese App lässt den Nutzer auf die Flickr API zugreifen um eine Auswahl von 24 Fotos
-		auf einer einfachen MPA darzustellen. Jeder Klick auf einen der vorgegebenen "Hot-Topic"-Buttons oder eine
-		gestartete Suchanfrage löst eine erneute Anfrage an die API aus. Die URL ändert sich entsprechend der getätigten Anfrage, sodass
-		der Nutzer über die Browsernavigation zwischen seinen Suchen hin- und herswitchen kann. Für die Nutzung dieser App wird ein eigener
-		Key für die Flickr API benötigt, daher ist eine Live demo leider nicht verfügbar.`,
+		description: `Diese App unerstützt den nach Inspiration und Weisheit (oder einfach nur Ablenkung) suchenden Nutzer, indem sie aus einer Auswahl von rund 200 Zitaten
+		eines zufällig auswählt und auf einer statischen Webseite darstellt. Die Zitate stammen aus einer Sammlung von STANDS4 APIs (https://www.quotes.net/api.php) und werden vorselektiert als JSON über meinen Github-Account zur Verfügung gestellt. Der asynchrone Fetch-Aufruf erfolgt dabei nur einmalig, sobald die Seite geladen wurde; die Zitate werden sodann im lokalen State der Hauptkomponente zwischengespeichert. Durch einen Knopfdruck wird ein neues Zitat eingeblendet und die Hintergrundfarbe wechselt ebenfalls nach dem Zufallsprinzip, um die Seite etwas weniger monoton zu gestalten. Der Nutzer hat die Möglichkeit, über die Social-Buttons ein Zitat bei Twitter oder Facebook zu posten.`,
 		technologies: [
 			'React',
 			'AJAX',
