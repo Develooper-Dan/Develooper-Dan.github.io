@@ -3,8 +3,8 @@ const projects =
     {
       id: '1',
       project_name: 'School Course Manager',
-      description: `Diese MPA verbindet eine REST API mit einem React-Frontend um eine Art Kurs-Manager bspw. für ein
-			Fortbildungsinstitut darzustellen. Ein nicht-registrierter Nutzer kann sich die einzelnen Kurse im Detail anschauen, jedoch
+      description: `Diese SPA verbindet eine REST API mit einem React-Frontend um eine Art Kurs-Manager bspw. für ein
+			Fortbildungsinstitut abzubilden. Ein nicht-registrierter Nutzer kann sich die einzelnen Kurse im Detail anschauen, jedoch
 			nicht bearbeiten oder löschen. Er kann sich registrieren und anschließend einen neuen Kurs anlegen, der ihm zugeordnet wird.
 			Die Nutzerdaten werden mit dem gehashten Passwort in der Datenbank gespeichert. Jeder Kurs ist einem bestimmten Nutzer zugeordnet und kann nur von diesem bearbeitet oder gelöscht werden, sobald er eingelogged ist.
 			Die Anwendung benutzt einen Cookie um angemeldete Nutzer zu registrieren, während sie durch die verschiedenen Routen navigieren. `,
