@@ -48,7 +48,7 @@ const projects =
 			wird ein übermitteln der Daten verhindert und der Nutzer wird an der entsprechenden Stelle
 			darüber informiert, welche Eingaben ergänzt / korrigert werden müssen. So soll eine gute user experience gewährleistet werden.`,
       technologies: [
-        'JavaScript mit jQuery',
+        'jQuery',
         'CSS'
       ],
       live_link: 'https://develooper-dan.github.io/interactive-form/',
@@ -95,18 +95,20 @@ const projects =
     },
 		{
 		id: '6',
-		project_name: 'Random Quote Generator',
-		description: `Diese App unerstützt den nach Inspiration und Weisheit (oder einfach nur Ablenkung) suchenden Nutzer, indem sie aus einer Auswahl von rund 200 Zitaten
-		eines zufällig auswählt und auf einer statischen Webseite darstellt. Die Zitate stammen aus einer Sammlung von STANDS4 APIs (https://www.quotes.net/api.php) und werden vorselektiert als JSON über meinen Github-Account zur Verfügung gestellt. Der asynchrone Fetch-Aufruf erfolgt dabei nur einmalig, sobald die Seite geladen wurde; die Zitate werden sodann im lokalen State der Hauptkomponente zwischengespeichert. Durch einen Knopfdruck wird ein neues Zitat eingeblendet und die Hintergrundfarbe wechselt ebenfalls nach dem Zufallsprinzip, um die Seite etwas weniger monoton zu gestalten. Der Nutzer hat die Möglichkeit, über die Social-Buttons ein Zitat bei Twitter oder Facebook zu posten.`,
+		project_name: 'Session Timer',
+		description: `Klassisches Tool der Moderne für den gut organisierten Menschen. Es lässt den Benutzer sowohl einen
+		Sitzungs- wie einen Pausentimer in einem Zeitfenster zwischen 1 und 60 Minuten einstellen. Während eines laufenden
+		Timers können die Zeitfenster nicht verändert werden, jedoch lässt sich der Timer pausieren und dann wie gewünscht
+		einstellen. Der Nutzer bekommt eine optische Warnung innerhalb der letzten 10 Sekunden und ein erfrischend-unangenehmer
+		Alarmton macht ihn darauf aufmerksam, wenn die Zeit abgelaufen ist. Danach läuft automatisch das jew. andere Zeitfenster an.`,
 		technologies: [
 			'React',
-			'AJAX',
 			'CSS'
 		],
-		github_repo: 'https://develooper-dan.github.io/random-quote-generator/' ,
+		live_link: 'https://develooper-dan.github.io/session-timer/' ,
 		image_urls: {
-			main: './img/Random Quotes main.jpg',
-			large:'./img/Random Quotes 1.jpg'
+			main: './img/Session Timer main.jpg',
+			large:'./img/Session Timer 1.jpg'
 		}
 	}
   ]
