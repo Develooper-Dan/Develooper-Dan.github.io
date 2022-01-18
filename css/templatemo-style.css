@@ -25,13 +25,6 @@ http://www.templatemo.com/tm-441-volton
          url('../fonts/RedRose-Bild.ttf') format('ttf');
 }
 
-@font-face {
-    font-family: 'startrackregular';
-    src: url('../fonts/startrack-axyog-webfont.woff2') format('woff2'),
-         url('../fonts/startrack-axyog-webfont.woff') format('woff'),
-         url('../fonts/startrack-axyog-webfont.ttf') format('ttf');
-}
-
 @keyframes slideToRight {
   70% {
     left: 10vw;
@@ -58,14 +51,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-}
-
-.blue {
-	color: #06C;
-}
-
-.green {
-	color: #090;
 }
 
 main {
@@ -199,11 +184,18 @@ textarea {
  2. Basic Style
 -------------------------------------------------------- */
 body {
-  font-size: 16px;
-  line-height: 24px;
-  color: #777777;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
   font-family: 'redroseregular';
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 a {
@@ -216,12 +208,9 @@ a {
   text-decoration: none !important;
 }
 a:hover {
-  color: #555555;
+  color: #333333;
 }
 
-h1, h2, h3, h4, h5 {
-  color: #555555;
-}
 
 hr{
 border: 1px solid #ccc;
@@ -302,7 +291,7 @@ h4.widget-title {
   width: 23%;
   height: 100%;
   position: fixed;
-  background-color: #5f6d7e;
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   overflow-y: hidden;
   z-index: 1;
@@ -315,27 +304,42 @@ h4.widget-title {
 }
 
 .top-section {
-  padding: 40px;
+  padding: 40px 40px 25px 40px;
 }
 
-.profile-image {
-  width: 240px;
-  height: 150px;
-  margin-bottom: 20px;
+.tm-double-border-1,
+.tm-double-border-2 {
+  border: 1px solid #fff;
+  position: relative;
 }
-.profile-image img {
-  width: 100%;
+
+.tm-double-border-2 {
+  top: 10px;
+  left: 10px;
 }
 
 .profile-description{
-  font-size: 14px;
+  margin-top: 1rem;
 }
 
-h3.profile-title {
-  margin-bottom: 5px;
+.profile-title {
   color: white;
-  font-size: 18px;
+  padding: 1rem;
+  font-size: 2rem;
   font-family: 'redrosebold';
+}
+
+.tm-bg-white-transparent {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid white;
+}
+
+.tm-intro {
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .main-navigation {
@@ -355,17 +359,18 @@ h3.profile-title {
   font-size: 24px;
 }
 .navigation li a:hover {
-  background: #5b6878;
+  background: #777777;
 }
 .navigation li a.active {
-  background: #495461;
+  background: #333333;
 }
 .navigation li a.active:hover {
-  background: #495461;
+  background: #333333;
 }
 .social-icons{
-  padding: 30px 40px;
+  padding-inline: 40px;
 }
+
 .social-icons li{
   display: inline-block;
   margin-right: 30px;
@@ -386,12 +391,12 @@ h3.profile-title {
 }
 
 .responsive-header {
-  background: #5f6d7e;
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 
 .responsive-menu .social-icons li{
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 992px) {
@@ -438,7 +443,7 @@ h3.profile-title {
   display: block;
   padding: 20px;
   margin-top: 30px;
-  background: #6cc0f7;
+  background: #777777;
   color: white;
   font-size: 18px;
 }
@@ -451,13 +456,14 @@ h3.profile-title {
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
-  padding: 200px 80px;
+  padding: 60px;
   margin-bottom: 30px;
-  height: 100vh;
-  background-image: url("../img/home-office.jpg");
+  width: 100vw;
+  background-image: url("../img/dream-pulse-header.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 
 @media screen and (max-width: 992px) {
@@ -468,62 +474,58 @@ h3.profile-title {
   }
 }
 
-.welcome-text {
-  /* z-index: 1; */
-  position: relative;
-  text-shadow: 2px 1px 2px #000;
+.welcome-title{
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 
-.welcome-text h5 {
-font-size: 20px;
-text-align: justify;
-line-height: 28px;
-}
-
-@media screen and (max-width: 992px){
-  .welcome-text h5{
-    font-size: 18px;
+@media screen and (min-width: 768px) {
+  .welcome-title {
+    font-size: 2.5rem;
   }
 }
+/*------ about ------ */
 
-.welcome-text h2 {
-  font-size: 42px;
-  font-family: 'startrackregular';
-  color: #fff;
-  margin-bottom: 30px;
+#about .row{
+  padding: 0 80px;
 }
 
-
-/*------ about ------ */
 .about-image {
-  position: relative;
-  right:0;
-  margin-left: -80px;
-  width: 77vw;
+  float: right;
+  width: 100vw;
   background-image: url("../img/level-up-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.about-image p{
-padding: 30px 80px;
-background-color: rgba(0, 0, 0, 0.4);
+.about-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  float: right;
+}
+
+.about-text p{
+width: 77vw;
+float: right;
+padding: 30px 80px 30px 90px;
 color:#fff;
 text-shadow: 2px 2px 3px #000;
 text-align: justify;
-padding-bottom: 15vh;
 }
 
 @media screen and (max-width: 992px) {
+  #about .row{
+    padding: 0 30px;
+  }
+
   .about-image{
     margin-left: -30px;
     width: 100vw;
   }
-  .about-image p{
-  font-size: 14px;
+  .about-text p{
   padding: 30px;
+  width: auto;
   }
 }
 /*------ projects ------ */
@@ -541,8 +543,8 @@ padding-bottom: 15vh;
   border: solid 4px #fefefe;
   box-shadow: 3px 2px 4px 6px rgb(17, 19, 19);
 }
-.project-item img {
-  width: 100%;
+.project-item  img {
+  max-width: 100%;
   display: block;
 }
 
@@ -568,13 +570,13 @@ padding-bottom: 15vh;
 
 .project-inside{
     position: relative;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .project-large-image {
     border: solid 4px #fefefe;
-    border-radius: 10%;
+    border-radius: 50px;
     box-shadow: 3px 2px 4px 6px rgb(17, 19, 19);
     width: 100%;
 }
@@ -611,17 +613,15 @@ padding-bottom: 15vh;
 }
 
 .project-large .project-hover{
-  border-radius: 10%;
+  border-radius: 50px;
   overflow-y: scroll;
 }
 
 .project-hover p {
-  font-size: 16px;
   color: #fff;
 }
 
 .project-large a{
-  font-size: 18px;
   position: absolute;
   left: 50%;
 }
@@ -636,13 +636,18 @@ padding-bottom: 15vh;
 }
 
 .project-large p{
-  padding: 2em;
+  padding: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .project-large p{
+    padding: 2rem;
+  }
 }
 
 .back{
   background-color: transparent;
   border: none;
-  font-size: 18px;
 }
 
 @media (any-pointer: fine){
