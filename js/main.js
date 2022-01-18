@@ -22,22 +22,20 @@ const projects =
     },
     {
       id: '2',
-      project_name: 'Library Manager',
-      description: `Dieses Programm stellt einen Manager für ein einfaches Büchereiinventar auf Basis einer SQLite-Datenbank dar.
-			Der Nutzer bekommt einen Ausschnitt der Gesamtliste aller vorhandenen Bücher angezeigt und kann zwischen den einzelnen Ausschnitten
-			per Link hin und her navigieren. Er kann entscheiden, wie viele Einträge ihm pro Seite angezeigt werden. Außerdem besteht die Möglichkeit,
-			nach bestimmten Büchern oder Autoren per Suchleiste zu filtern. Der Nutzer kann auch neue Bücher anlegen. Seine Angaben werden validiert,
-			bevor sie an die Datenbank übermittelt werden.`,
+      project_name: 'Supaevent',
+      description: `Bei dieser Shopseite arbeitete ich innerhalb eines kleinen Teams an der Einrichtung
+			eines Online-Shops für einen Anbieter von Event-Dienstleistungen. Meine Hauptaufgabe lag
+			dabei in der Umsetzung des anspruchsvollen Screendesigns für die Start- und verschiedene Unterseiten.`,
       technologies: [
-				'Node / Express',
-				'Pug',
-				'SQLite mit Sequelize',
-				'CSS'
+				'Shopware 6',
+				'HTML',
+				'CSS',
+				'Bootstrap'
       ],
-      live_link: 'https://library-manager-sql.herokuapp.com/books',
+      url_link: 'https://www.supaevent.de/',
 			image_urls: {
-				main: './img/Library Manager main.jpg',
-				large:'./img/Library Manager 1.jpg'
+				main: './img/Supaevent main.jpg',
+				large:'./img/Supaevent 1.jpg'
 			}
     },
     {
@@ -135,8 +133,8 @@ $(".project-item").on("click", (e) =>{
 	if(clickedProject.live_link){
 		link = `<a href="${clickedProject.live_link}" target="_blank">&#10144; Live demo</a>`
 	}
-	if(clickedProject.github_repo){
-		link = `<a href="${clickedProject.github_repo}" target="_blank">&#10144; Github repo</a>`
+	if(clickedProject.url_link){
+		link = `<a href="${clickedProject.url_link}" target="_blank">&#10144; zur Seite</a>`
 	}
 	$(".row.projects-holder").hide();
 	$("#projects").append(
