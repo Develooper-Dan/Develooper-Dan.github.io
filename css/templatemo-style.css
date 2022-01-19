@@ -544,7 +544,7 @@ text-align: justify;
   box-shadow: 3px 2px 4px 6px rgb(17, 19, 19);
 }
 .project-item  img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
